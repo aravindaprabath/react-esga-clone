@@ -1,7 +1,8 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import LeftMenuLevelOne from '../components/LeftMenuLevelOne';
 import TopMenu from '../components/TopMenu';
 import ContentWrapper from "../components/ContentWrapper.jsx";
+import MyResponsiveBump from "../charts/MyResponsiveBump.jsx";
 
 export default function LandingPage() {
     let [toggleTopMenuIcon, setToggleTopMenuIcon] = useState(false);
@@ -11,8 +12,9 @@ export default function LandingPage() {
         setisLeftMenuOpen(!isLeftMenuOpen);
         setToggleTopMenuIcon(!toggleTopMenuIcon);
     };
+useEffect(()=>{
 
-
+},[isLeftMenuOpen])
 
     return (
         <div className='grid-cols-homepage-grid-cols grid-rows-homepage-grid-rows min-h-screen grid'>
@@ -22,7 +24,9 @@ export default function LandingPage() {
 
             />
             {isLeftMenuOpen && <LeftMenuLevelOne/>}
-            <ContentWrapper isLeftMenuOpen={isLeftMenuOpen}/>
+            <ContentWrapper isLeftMenuOpen={isLeftMenuOpen}>
+             <MyResponsiveBump/>
+            </ContentWrapper>
         </div>
     );
 }
