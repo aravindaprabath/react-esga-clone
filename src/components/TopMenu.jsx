@@ -27,7 +27,7 @@ function TopMenu(props) {
   }, [isdark]);
 
   return (
-    <div className='dark:bg-slate-900 dark:text-white flex justify-between col-start-1 col-end-3 row-start-1 row-end-2 px-4 py-2 align-middle border-b-2 border-b-slate-100'>
+    <div className='dark:border-slate-800  dark:bg-gray-900 dark:text-slate-400 flex justify-between col-start-1 col-end-3 row-start-1 row-end-2 px-4 py-2 align-middle border-b-2 border-b-slate-100'>
       <div className='flex items-center justify-start text-xl font-bold'>
         <div
           onClick={props.topMenuIconClickHandler}
