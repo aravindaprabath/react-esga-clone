@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 
 import {
-  RiAlignJustify,
-  RiBankLine,
   RiSunLine,
   RiMoonFill,
+  RiArrowLeftLine,
+  RiArrowRightLine,
 } from 'react-icons/ri';
 
 function TopMenu(props) {
@@ -31,11 +31,13 @@ function TopMenu(props) {
       <div className='flex items-center justify-start text-xl font-bold'>
         <div
           onClick={props.topMenuIconClickHandler}
-          className='mr-4 hover:bg-orange-50 p-2 cursor-pointer rounded dark:text-teal-600 text-orange-600 border dark:border-teal-600 border-orange-300'
+          className='mr-4 p-2 cursor-pointer  dark:text-teal-600 text-3xl rounded-full border border-gray-300 '
         >
-          {props.toggleTopMenuIcon ? <RiBankLine /> : <RiAlignJustify />}
+          {props.toggleTopMenuIcon ? <RiArrowRightLine /> : <RiArrowLeftLine />}
         </div>
-        <p className='text-slate-800 dark:text-teal-500'>ESGA.</p>
+        <p className='text-slate-800 dark:text-teal-500'>
+          ESG <span className='font-playfair italic text-1xl'>Advantage</span> .
+        </p>
       </div>
       <div className='flex justify-end items-center gap-3'>
         <ul className='flex gap-3 '>
