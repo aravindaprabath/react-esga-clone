@@ -55,13 +55,14 @@ export default function LandingPage() {
     useEffect(() => {
     }, [isLeftMenuOpen]);
 
-    return (<div className='grid-cols-homepage-grid-cols grid-rows-homepage-grid-rows min-h-screen grid'>
+    return (<div className='grid-cols-homepage-grid-cols grid-rows-homepage-grid-rows min-h-screen grid h-'>
         <TopMenu
             topMenuIconClickHandler={topMenuIconClickHandler}
             toggleTopMenuIcon={toggleTopMenuIcon}
         />
         {isLeftMenuOpen && <LeftMenuLevelOne/>}
         <ContentWrapper isLeftMenuOpen={isLeftMenuOpen}>
+
             <DashboardChartGridWrapper>
                 <BarChart/>
                 <PieChart/>

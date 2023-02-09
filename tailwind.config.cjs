@@ -15,8 +15,8 @@ module.exports = {
       },
 
       gridTemplateRows: {
-        'dashboardChart-grid-rows': 'minmax(600px, auto)',
-        'homepage-grid-rows': 'auto 1fr',
+        'dashboardChart-grid-rows': 'max-content',
+        'homepage-grid-rows': '60px 1fr',
       },
     },
   },

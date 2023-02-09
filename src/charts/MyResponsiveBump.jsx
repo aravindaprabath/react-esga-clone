@@ -2,6 +2,7 @@
 // yarn add @nivo/core @nivo/bump
 import { ResponsiveBump } from '@nivo/bump';
 import { useEffect } from 'react';
+import ChartWrapper from "../components/ChartWrapper.jsx";
 
 // make sure parent container have a defined height when using
 // responsive component, otherwise height will be 0 and
@@ -314,51 +315,51 @@ let myData = [
 
 let MyResponsiveBump = () => {
   return (
-    <div
-      className={'border dark:border-gray-800 border-gray-300 rounded-md p-6'}
-    >
-      <ResponsiveBump
-        data={myData}
-        colors={{ scheme: 'spectral' }}
-        lineWidth={3}
-        activeLineWidth={6}
-        inactiveLineWidth={3}
-        inactiveOpacity={0.15}
-        pointSize={10}
-        activePointSize={16}
-        inactivePointSize={0}
-        pointColor={{ theme: 'background' }}
-        pointBorderWidth={3}
-        activePointBorderWidth={3}
-        pointBorderColor={{ from: 'serie.color' }}
-        axisTop={{
-          tickSize: 5,
-          tickPadding: 5,
-          tickRotation: 0,
-          legend: '',
-          legendPosition: 'middle',
-          legendOffset: -36,
-        }}
-        axisBottom={{
-          tickSize: 5,
-          tickPadding: 5,
-          tickRotation: 0,
-          legend: '',
-          legendPosition: 'middle',
-          legendOffset: 32,
-        }}
-        axisLeft={{
-          tickSize: 5,
-          tickPadding: 5,
-          tickRotation: 0,
-          legend: 'ranking',
-          legendPosition: 'middle',
-          legendOffset: -40,
-        }}
-        margin={{ top: 40, right: 100, bottom: 40, left: 60 }}
-        axisRight={null}
-      />
-    </div>
+   <ChartWrapper>
+     <ResponsiveBump
+         data={myData}
+         colors={{ scheme: 'spectral' }}
+         lineWidth={3}
+         activeLineWidth={6}
+         inactiveLineWidth={3}
+         inactiveOpacity={0.15}
+         pointSize={10}
+         activePointSize={16}
+         inactivePointSize={0}
+         pointColor={{ theme: 'background' }}
+         pointBorderWidth={3}
+         activePointBorderWidth={3}
+         pointBorderColor={{ from: 'serie.color' }}
+         axisTop={{
+           tickSize: 5,
+           tickPadding: 5,
+           tickRotation: 0,
+           legend: '',
+           legendPosition: 'middle',
+           legendOffset: -36,
+         }}
+         axisBottom={{
+           tickSize: 5,
+           tickPadding: 5,
+           tickRotation: 0,
+           legend: '',
+           legendPosition: 'middle',
+           legendOffset: 32,
+         }}
+         axisLeft={{
+           tickSize: 5,
+           tickPadding: 5,
+           tickRotation: 0,
+           legend: 'ranking',
+           legendPosition: 'middle',
+           legendOffset: -40,
+         }}
+         margin={{ top: 40, right: 100, bottom: 40, left: 60 }}
+         axisRight={null}
+     />
+   </ChartWrapper>
+
+
   );
 };
 
