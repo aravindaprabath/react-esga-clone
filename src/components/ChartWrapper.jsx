@@ -2,7 +2,7 @@ import React from 'react';
 
 function ChartWrapper(props) {
   return (
-    <div className='border dark:border-gray-800 border-gray-300 rounded-md h-auto p-10 justify-between '>
+    <div className='border dark:border-gray-800 shadow-sm rounded-md h-auto p-10 justify-between bg-white dark:bg-gray-900'>
       <div className='border-b-2   mb-4 pb-4'>
         <div className={'font-bold text-xl mb-2 text-gray-800'}>Title</div>
         <div>
