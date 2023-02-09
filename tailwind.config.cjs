@@ -8,6 +8,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        inter: 'inter',
+        playfair: 'Playfair Display',
+      },
       gridTemplateColumns: {
         'homepage-grid-cols': '260px 1fr',
         'dashboardChart-grid-3cols': 'repeat(auto-fit, minmax(600px, 1fr))',
