@@ -315,9 +315,7 @@ let myData = [
 let MyResponsiveBump = () => {
   return (
     <div
-      className={
-        '  border dark:border-gray-800 border-gray-300 rounded-md p-6'
-      }
+      className={'border dark:border-gray-800 border-gray-300 rounded-md p-6'}
     >
       <ResponsiveBump
         data={myData}

@@ -11,11 +11,11 @@ module.exports = {
       gridTemplateColumns: {
         'homepage-grid-cols': '260px 1fr',
         'dashboardChart-grid-3cols': 'repeat(auto-fit, minmax(600px, 1fr))',
-        'dashboardChart-grid-2cols': 'repeat(auto-fit, minmax(800px, 1fr))',
+        'dashboardChart-grid-2cols': 'repeat(auto-fit, minmax(1000px, 1fr))',
       },
 
       gridTemplateRows: {
-        'dashboardChart-grid-rows': 'auto',
+        'dashboardChart-grid-rows': 'minmax(600px, auto)',
         'homepage-grid-rows': 'auto 1fr',
       },
     },
